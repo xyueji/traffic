@@ -99,8 +99,8 @@ under the License.
     <modules> 
       <!-- module filepath="$$PROJECT_DIR$$/${pom.artifactId}.iml"/ -->  
       <module filepath="$PROJECT_DIR$/traffic.iml"/>
-      <module filepath="$PROJECT_DIR$/../../../work/wanmei/project/traffic/traffic-flink/traffic-flink.iml"/>
-      <module filepath="$PROJECT_DIR$/../../../work/wanmei/project/traffic/traffic-core/traffic-core.iml"/>
+      <module filepath="$PROJECT_DIR$/traffic-flink/traffic-flink.iml"/>
+      <module filepath="$PROJECT_DIR$/traffic-core/traffic-core.iml"/>
     </modules> 
   </component>  
   <UsedPathMacros> 

@@ -1,0 +1,15 @@
+## 街道实时数据
+curl -H "Content-type: application/json"  -X POST -d '{
+}' https://opendata.sz.gov.cn/api/29200_00403589/1/service.xhtml\?appKey\=ae97df078572417e8e0a2b79b032548e\&page\=1\&rows\=1000
+
+## 城市道路信息
+curl -H "Content-type: application/json"  -X POST -d '{
+}' https://opendata.sz.gov.cn/api/1142747625/1/service.xhtml\?appKey\=ae97df078572417e8e0a2b79b032548e\&page\=1\&rows\=1000
+
+## 路段速度数据
+curl -H "Content-type: application/json"  -X POST -d '{
+}' https://opendata.sz.gov.cn/api/29200_00403590/1/service.xhtml\?appKey\=ae97df078572417e8e0a2b79b032548e\&page\=1\&rows\=1000
+
+## 路段属性数据
+curl -H "Content-type: application/json"  -X POST -d '{
+}' https://opendata.sz.gov.cn/api/29200_00403588/1/service.xhtml\?appKey\=ae97df078572417e8e0a2b79b032548e\&page\=1\&rows\=1000

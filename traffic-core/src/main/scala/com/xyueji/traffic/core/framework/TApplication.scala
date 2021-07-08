@@ -3,8 +3,7 @@ package com.xyueji.traffic.core.framework
 import java.net.{ServerSocket, Socket}
 
 import com.xyueji.traffic.core.Constants
-import com.xyueji.traffic.core.util.{EnvUtil, PropertiesUtil}
-import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment
+import com.xyueji.traffic.core.util.EnvUtil
 
 /**
   * @author xiongzhigang
@@ -25,17 +24,20 @@ trait TApplication {
     * 1. 函数柯里化
     * 2. 控制抽象
     */
-  def start (t: String)(op: => Unit): Unit = {
+  def start(t: String)(op: => Unit): Unit = {
     // TODO 1. 初始化缓存
     t match {
       case Constants.SOCKET_NAME =>
-        envData = new Socket(PropertiesUtil.getValue(Constants.SOCKET_SERVER_HOST), PropertiesUtil.getValue(Constants.SOCKET_SERVER_PORT).toInt)
+        envData = new Socket(Constants.SOCKET_SERVER_HOST, Constants.SOCKET_SERVER_PORT.toInt)
       case Constants.SERVER_SOCKET_NAME =>
-        envData = new ServerSocket(PropertiesUtil.getValue(Constants.SERVER_SOCKET_PORT).toInt)
+        envData = new ServerSocket(Constants.SERVER_SOCKET_PORT.toInt)
       case Constants.SPARK_NAME =>
         envData = EnvUtil.getSparkEnv()
       case Constants.FLINK_NAME =>
-        envData = StreamExecutionEnvironment.createLocalEnvironment()
+        envData = EnvUtil.getFlinkEnv()
+      case Constants.FLINK_STREAM_NAME =>
+        envData = EnvUtil.getFlinkStreamEnv()
+      case _ =>
     }
 
     // TODO 2. 业务逻辑
@@ -48,7 +50,7 @@ trait TApplication {
     // TODO 3. 清除环境
     t match {
       case Constants.SOCKET_NAME =>
-        val socket:Socket = envData.asInstanceOf[Socket]
+        val socket: Socket = envData.asInstanceOf[Socket]
         if (!socket.isClosed) {
           socket.close()
         }
@@ -61,6 +63,7 @@ trait TApplication {
         EnvUtil.cleanSparkEnv()
       case Constants.FLINK_NAME =>
         EnvUtil.cleanFlinkEnv()
+      case _ =>
     }
   }
 

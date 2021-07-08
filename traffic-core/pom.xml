@@ -27,5 +27,10 @@
             <artifactId>flink-scala_${scala.binary.version}</artifactId>
             <version>${flink.verison}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
     </dependencies>
 </project>

@@ -1,8 +1,10 @@
 package com.xyueji.traffic.core.util
 
+import org.apache.flink.api.scala.ExecutionEnvironment
 import org.apache.flink.configuration.Configuration
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment
 import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.flink.api.scala._
 
 /**
   * @author xiongzhigang
@@ -14,6 +16,7 @@ object EnvUtil {
   private val scLocal = new ThreadLocal[SparkContext]
   // 构建flink线程共享数据
   private val seeLocal = new ThreadLocal[StreamExecutionEnvironment]
+  private val eeLocal = new ThreadLocal[ExecutionEnvironment]
 
   /**
     * 获取spark执行环境
@@ -45,7 +48,7 @@ object EnvUtil {
   /**
     * 获取flink执行环境
     */
-  def getFlinkEnv(parallelism: Int = Runtime.getRuntime.availableProcessors, conf: Configuration = new Configuration): StreamExecutionEnvironment = {
+  def getFlinkStreamEnv(parallelism: Int = Runtime.getRuntime.availableProcessors, conf: Configuration = new Configuration): StreamExecutionEnvironment = {
     var see:StreamExecutionEnvironment = seeLocal.get()
 
     if (see == null) {
@@ -59,8 +62,29 @@ object EnvUtil {
   /**
     * 清除flink执行环境
     */
-  def cleanFlinkEnv(): Unit = {
+  def cleanFlinkStreamEnv(): Unit = {
     seeLocal.remove()
+  }
+
+  def getFlinkEnv(parallelism: Int = Runtime.getRuntime.availableProcessors, conf: Configuration = new Configuration): ExecutionEnvironment = {
+    var ee: ExecutionEnvironment = eeLocal.get()
+
+    if (ee == null) {
+      ee = ExecutionEnvironment.getExecutionEnvironment
+      eeLocal.set(ee)
+    }
+
+    ee
+  }
+
+  def cleanFlinkEnv(): Unit = {
+    eeLocal.remove()
+  }
+
+  def main(args: Array[String]): Unit = {
+    val env = EnvUtil.getFlinkEnv()
+    env.fromCollection(Array("1", "2")).map(t => Tuple1(t)).writeAsCsv("test")
+    env.execute()
   }
 
 }

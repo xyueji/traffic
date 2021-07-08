@@ -2,12 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4ceaa2a-a5b4-4be4-a689-b4da31b251c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/traffic-core/traffic-core.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/traffic-flink/traffic-flink.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-core/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/bean/OpenDataResponse.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/HttpUtil.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/JsonUtil.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/TimeUtil.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/application/HttpToFile.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/OpenDataResponse.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadInfo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadObject.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadRealTimeData.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadSectionData.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadSectionInfo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/controller/HttpToFileController.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/dao/HttpToFileDao.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/service/HttpToFileService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/traffic-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic-core/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/traffic-core/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/bean/Constants.scala" beforeDir="false" afterPath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/bean/Constants.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/framework/TApplication.scala" beforeDir="false" afterPath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/framework/TApplication.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/EnvUtil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/EnvUtil.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/traffic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/traffic.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic.iws" beforeDir="false" afterPath="$PROJECT_DIR$/traffic.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/traffic-flink/target/" />
     <ignored path="$PROJECT_DIR$/traffic-core/target/" />
+    <ignored path="$PROJECT_DIR$/traffic-etl/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,29 +192,76 @@
   <component name="EjbViewSettings">
     <EjbView showMembers="false" autoscrollToSource="false" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="HIDE_WARNINGS" value="false" />
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/service/HttpToFileService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="534">
+              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+              <folding>
+                <element signature="e#40#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/traffic-core/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="jar:///Library/scala-2.11.8/lib/scala-actors-2.11.0.jar!/scala/actors/threadpool/TimeUnit.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="168" column="33" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="110" column="67" selection-start-line="110" selection-start-column="67" selection-end-line="111" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/controller/HttpToFileController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="e#43#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reflector</find>
+      <find>LogInfo.TASK</find>
+      <find>DataBusDateUtils</find>
+      <find>BASE_PACKAGE</find>
+      <find>ObjectU</find>
+      <find>opendata.road.info.url</find>
+      <find>implicit</find>
+      <find>._</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>DateUtils</replace>
+      <replace>logger</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -199,6 +270,50 @@
     <option name="SHOW_PACKAGES" value="false" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="SORT_ALPHABETICALLY" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/HttpPoolUtils.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/http/HttpConnectionManager.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/utils/MachineUtil.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/Reflector.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/enum/HttpEnum.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/enums/HttpEnum.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/http/HttpPoolUtils.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/ObjectUtil.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/DateUtils.java" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/TimeUtil.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/PropertiesUtil.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/HttpToFile.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/framework/TDao.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/bean/RespResult.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/OpenDataResponse.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/HttpUtil.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/JsonUtil.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/dao/HttpToFileDao.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/application/Test.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/EnvUtil.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/source/RoadDataSource.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/application/HttpToFile.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/bean/OpenDataResponse.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/package.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadObject.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadInfo.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadRealTimeData.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadSectionData.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadSectionInfo.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/bean/Constants.scala" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/controller/HttpToFileController.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/framework/TApplication.scala" />
+        <option value="$PROJECT_DIR$/traffic-core/pom.xml" />
+        <option value="$PROJECT_DIR$/traffic-etl/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/service/HttpToFileService.scala" />
+      </list>
+    </option>
   </component>
   <component name="InspectionManager">
     <option name="AUTOSCROLL_TO_SOURCE" value="false" />
@@ -214,6 +329,49 @@
     <option name="ADD_LABEL_ON_DEBUGGING" value="true" />
     <option name="ADD_LABEL_ON_UNIT_TEST_PASSED" value="true" />
     <option name="ADD_LABEL_ON_UNIT_TEST_FAILED" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="traffic" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="traffic" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="traffic-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="traffic-etl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="traffic-etl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="traffic-flink" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Xss4096k" />
   </component>
   <component name="PerforceConfiguration">
     <option name="PORT" value="magic:1666" />
@@ -264,6 +422,141 @@
               <item name="traffic" type="462c0819:PsiDirectoryNode" />
               <item name="traffic-core" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-core" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-etl" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="traffic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="traffic" type="462c0819:PsiDirectoryNode" />
+              <item name="traffic-flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -289,12 +582,24 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625215317380" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625742436087" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xyueji.traffic.core.bean" />
+      <recent name="com.xyueji.traffic.core.util" />
+      <recent name="com.xyueji.traffic.core.util.http" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util" />
+      <recent name="$PROJECT_DIR$/traffic-core/src/main/java/com/xyueji/traffic/core/util/http" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -308,9 +613,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HttpToFile">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Constants" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyueji.traffic.core.Constants" />
+      <module name="traffic-core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyueji.traffic.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnvUtil" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyueji.traffic.core.util.EnvUtil" />
+      <module name="traffic-core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyueji.traffic.core.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpToFile" type="Application" factoryName="Application" singleton="false" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyueji.traffic.etl.application.HttpToFile" />
+      <module name="traffic-etl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyueji.traffic.etl.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpUtil" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyueji.traffic.core.util.HttpUtil" />
+      <module name="traffic-core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyueji.traffic.core.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyueji.traffic.etl.application.Test" />
+      <module name="traffic-etl" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyueji.traffic.etl.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -332,6 +706,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Constants" />
+      <item itemvalue="Application.EnvUtil" />
+      <item itemvalue="Application.HttpToFile" />
+      <item itemvalue="Application.HttpUtil" />
+      <item itemvalue="Application.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HttpToFile" />
+        <item itemvalue="Application.HttpUtil" />
+        <item itemvalue="Application.EnvUtil" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Constants" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="StarteamConfiguration">
     <option name="SERVER" value="" />
@@ -366,12 +756,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625215213683</updated>
-      <workItem from="1625215216404" duration="37000" />
+      <workItem from="1625215216404" duration="694000" />
+      <workItem from="1625452164400" duration="599000" />
+      <workItem from="1625536874463" duration="5089000" />
+      <workItem from="1625563320558" duration="224000" />
+      <workItem from="1625564015304" duration="2018000" />
+      <workItem from="1625623235747" duration="22885000" />
+      <workItem from="1625709536739" duration="20353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37000" />
+    <option name="totallyTimeSpent" value="51862000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -389,46 +785,46 @@
     <frame x="1440" y="69" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Image Layers" />
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.28411514" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Web" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Tail" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21827412" />
       <window_info anchor="bottom" id="EJB" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="CVS" order="8" />
-      <window_info anchor="bottom" id="Messages" order="9" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="leetcode" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Json Parser" />
-      <window_info anchor="right" id="Word Book" side_tool="true" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.18883249" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.13908629" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32994923" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.4497462" />
+      <window_info anchor="bottom" id="Tail" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Aspects" order="3" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.4987013" visible="true" weight="0.16471216" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" sideWeight="0.5012987" side_tool="true" visible="true" weight="0.16471216" />
+      <window_info anchor="right" id="leetcode" order="7" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Json Parser" order="10" />
+      <window_info anchor="right" id="SciView" order="11" />
+      <window_info anchor="right" id="Palette&#9;" order="12" />
+      <window_info anchor="right" id="Theme Preview" order="13" />
+      <window_info anchor="right" id="Bean Validation" order="14" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,17 +887,352 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/traffic-core/pom.xml">
+    <entry file="file://$PROJECT_DIR$/road_info.csv/2021-07-08--11/.part-2-0.inprogress.1697bbd3-7b14-441f-85f1-29db5eb3bd09">
       <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/road_info.csv/2021-07-08--11/.part-1-0.inprogress.f1cb2575-024f-4cfd-9b3e-73b3f4cf5e65">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info.csv/2021-07-08--11/.part-4-0.inprogress.290fd947-04eb-411e-9cbe-c0700a299eaf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadSectionInfo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="426">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadSectionData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadRealTimeData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadObject.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/RoadInfo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/bean/OpenDataResponse.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info.csv/2021-07-08--11/.part-1-0.inprogress.6e5777c7-fb58-427c-bea4-70f8f03d1f92">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info.csv/2021-07-08--11/.part-2-0.inprogress.aaef0c61-cf9f-4265-81f9-7f5c9290fd27">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info.csv/2021-07-08--11/.part-0-0.inprogress.2d835c82-2839-4767-a121-20230f071cb7">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0.jar!/org/apache/flink/streaming/api/functions/sink/filesystem/bucketassigners/BasePathBucketAssigner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0.jar!/org/apache/flink/streaming/api/functions/sink/filesystem/BucketAssigner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--12/.part-0-0.inprogress.25f811c3-79ae-4c98-8e44-2ce5c7a75a1b">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--12/.part-0-26.inprogress.f0dd4438-2e45-4a57-9bd3-99d78cd8f92e">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--12/.part-1-0.inprogress.37a280c8-25ed-41f9-aba2-3185cf348c21">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5166" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--12/.part-0-0.inprogress.5ad7076c-963e-47cf-990f-610a51c8c223">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5149" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/HttpUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/.part-1-227.inprogress.cc1e5ae8-f6ef-4c7c-9d55-24640c888083">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/.part-1-230.inprogress.1174093f-1995-471d-8293-b88eb0b99bac">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/.part-1-229.inprogress.6d1abcd1-de6d-432c-9781-07cbfe59fb89">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/.part-1-228.inprogress.0802703c-26e1-46e0-a57c-96fcbb0da2c2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/.part-0-229.inprogress.78b8cccb-c823-4507-84a5-1807e23a33f6">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/.part-0-228.inprogress.bc52ac25-63d9-4ff0-9905-88f915225242">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/.part-0-227.inprogress.6a8ba4c2-d8f8-48aa-bb72-475abfe6751b">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-core/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="73" selection-start-column="59" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/bean/Constants.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/part-0-0">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--16/.part-0-0">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0.jar!/org/apache/flink/streaming/api/functions/sink/filesystem/StreamingFileSink.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0.jar!/org/apache/flink/streaming/api/functions/sink/filesystem/bucketassigners/DateTimeBucketAssigner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/framework/TApplication.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="e#43#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-core/src/main/scala/com/xyueji/traffic/core/util/EnvUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/application/HttpToFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#44#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--16/road_real_time-0-0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33507" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-core/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--17/road_info-3-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--17/road_info-4-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--17/road_info-1-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_info/2021-07-08--17/road_info-0-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--17/road_real_time-0-2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--17/road_real_time-0-1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--17/road_real_time-0-6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/scala-2.11.8/lib/scala-actors-2.11.0.jar!/scala/actors/threadpool/TimeUnit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="168" column="33" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="110" column="67" selection-start-line="110" selection-start-column="67" selection-end-line="111" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--17/road_real_time-0-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/road_real_time/2021-07-08--17/road_real_time-1-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/controller/HttpToFileController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#43#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traffic-etl/src/main/scala/com/xyueji/traffic/etl/service/HttpToFileService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+          <folding>
+            <element signature="e#40#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>traffic-etl</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

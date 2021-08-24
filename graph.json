@@ -169,7 +169,7 @@
 		"source": 24632,
 		"target": 53488
 	}],
-	"category ": [{
+	"categories": [{
 		"name": "TABLE"
 	}, {
 		"name": "COLUMN"

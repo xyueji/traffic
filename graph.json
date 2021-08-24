@@ -1,1 +1,177 @@
-{"nodes":"[ {  "tableType" : "MANAGED_TABLE",  "createAt" : "2021-08-24 10:38:39",  "db" : "default",  "colType" : "string",  "id" : 20536,  "col" : "blockid_exponent",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "t1"}, {  "tableType" : "EXTERNAL_TABLE",  "createAt" : "2021-07-19 15:14:36",  "db" : "ods",  "colType" : "string",  "id" : 40984640,  "col" : "period",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "road_real_time"}, {  "tableType" : "EXTERNAL_TABLE",  "createAt" : "2021-07-19 15:18:54",  "db" : "ods",  "colType" : "string",  "id" : 20552,  "col" : "roadsect_id",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "road_sect_speed"}, {  "tableType" : "MANAGED_TABLE",  "createAt" : "2021-08-11 14:47:01",  "db" : "default",  "colType" : "string",  "id" : 20568,  "col" : "blockid_exponent",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "temp"}, {  "tableType" : "EXTERNAL_TABLE",  "createAt" : "2021-07-19 15:18:54",  "db" : "ods",  "colType" : "string",  "id" : 16488,  "col" : "period",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "road_sect_speed"}, {  "tableType" : "EXTERNAL_TABLE",  "createAt" : "2021-07-19 15:14:36",  "db" : "ods",  "colType" : "string",  "id" : 37072,  "col" : "blockid",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "road_real_time"}, {  "tableType" : "MANAGED_TABLE",  "createAt" : "2021-08-24 10:38:39",  "db" : "default",  "colType" : "string",  "id" : 41168,  "col" : "roadsect_id",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "t1"}, {  "tableType" : "EXTERNAL_TABLE",  "createAt" : "2021-07-19 15:14:36",  "db" : "ods",  "colType" : "string",  "id" : 49392,  "col" : "exponent",  "status" : "ONLINE",  "category" : 0,  "owner" : "bigdata",  "table" : "road_real_time"}, {  "tableType" : "MANAGED_TABLE",  "createAt" : "2021-08-24 10:38:39",  "db" : "default",  "colType" : "",  "id" : 24632,  "col" : "",  "status" : "ONLINE",  "category" : 1,  "owner" : "bigdata",  "table" : "t1"}, {  "tableType" : "EXTERNAL_TABLE",  "createAt" : "2021-07-19 15:14:36",  "db" : "ods",  "colType" : "",  "id" : 12360,  "col" : "",  "status" : "ONLINE",  "category" : 1,  "owner" : "bigdata",  "table" : "road_real_time"}, {  "tableType" : "MANAGED_TABLE",  "createAt" : "2021-08-11 14:47:01",  "db" : "default",  "colType" : "",  "id" : 16456,  "col" : "",  "status" : "ONLINE",  "category" : 1,  "owner" : "bigdata",  "table" : "temp"}, {  "tableType" : "EXTERNAL_TABLE",  "createAt" : "2021-07-19 15:18:54",  "db" : "ods",  "colType" : "",  "id" : 53488,  "col" : "",  "status" : "ONLINE",  "category" : 1,  "owner" : "bigdata",  "table" : "road_sect_speed"} ]","links":"[ {  "source" : 20536,  "target" : 40984640}, {  "source" : 41168,  "target" : 40984640}, {  "source" : 16456,  "target" : 12360}, {  "source" : 24632,  "target" : 12360}, {  "source" : 41168,  "target" : 20552}, {  "source" : 20536,  "target" : 16488}, {  "source" : 41168,  "target" : 16488}, {  "source" : 20568,  "target" : 37072}, {  "source" : 20536,  "target" : 37072}, {  "source" : 20568,  "target" : 49392}, {  "source" : 20536,  "target" : 49392}, {  "source" : 24632,  "target" : 53488} ]","category":"[ {  "name" : "TABLE"}, {  "name" : "COLUMN"} ]"}
+{
+	"nodes": [{
+		"tableType": "MANAGED_TABLE",
+		"createAt": "2021-08-24 10:38:39",
+		"db": "default",
+		"colType": "string",
+		"id": 20536,
+		"col": "blockid_exponent",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "t1"
+	}, {
+		"tableType": "EXTERNAL_TABLE",
+		"createAt": "2021-07-19 15:14:36",
+		"db": "ods",
+		"colType": "string",
+		"id": 40984640,
+		"col": "period",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "road_real_time"
+	}, {
+		"tableType": "EXTERNAL_TABLE",
+		"createAt": "2021-07-19 15:18:54",
+		"db": "ods",
+		"colType": "string",
+		"id": 20552,
+		"col": "roadsect_id",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "road_sect_speed"
+	}, {
+		"tableType": "MANAGED_TABLE",
+		"createAt": "2021-08-11 14:47:01",
+		"db": "default",
+		"colType": "string",
+		"id": 20568,
+		"col": "blockid_exponent",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "temp"
+	}, {
+		"tableType": "EXTERNAL_TABLE",
+		"createAt": "2021-07-19 15:18:54",
+		"db": "ods",
+		"colType": "string",
+		"id": 16488,
+		"col": "period",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "road_sect_speed"
+	}, {
+		"tableType": "EXTERNAL_TABLE",
+		"createAt": "2021-07-19 15:14:36",
+		"db": "ods",
+		"colType": "string",
+		"id": 37072,
+		"col": "blockid",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "road_real_time"
+	}, {
+		"tableType": "MANAGED_TABLE",
+		"createAt": "2021-08-24 10:38:39",
+		"db": "default",
+		"colType": "string",
+		"id": 41168,
+		"col": "roadsect_id",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "t1"
+	}, {
+		"tableType": "EXTERNAL_TABLE",
+		"createAt": "2021-07-19 15:14:36",
+		"db": "ods",
+		"colType": "string",
+		"id": 49392,
+		"col": "exponent",
+		"status": "ONLINE",
+		"category": 0,
+		"owner": "bigdata",
+		"table": "road_real_time"
+	}, {
+		"tableType": "MANAGED_TABLE",
+		"createAt": "2021-08-24 10:38:39",
+		"db": "default",
+		"colType": "",
+		"id": 24632,
+		"col": "",
+		"status": "ONLINE",
+		"category": 1,
+		"owner": "bigdata",
+		"table": "t1"
+	}, {
+		"tableType": "EXTERNAL_TABLE",
+		"createAt": "2021-07-19 15:14:36",
+		"db": "ods",
+		"colType": "",
+		"id": 12360,
+		"col": "",
+		"status": "ONLINE",
+		"category": 1,
+		"owner": "bigdata",
+		"table": "road_real_time"
+	}, {
+		"tableType": "MANAGED_TABLE",
+		"createAt": "2021-08-11 14:47:01",
+		"db": "default",
+		"colType": "",
+		"id": 16456,
+		"col": "",
+		"status": "ONLINE",
+		"category": 1,
+		"owner": "bigdata",
+		"table": "temp"
+	}, {
+		"tableType": "EXTERNAL_TABLE",
+		"createAt": "2021-07-19 15:18:54",
+		"db": "ods",
+		"colType": "",
+		"id": 53488,
+		"col": "",
+		"status": "ONLINE",
+		"category": 1,
+		"owner": "bigdata",
+		"table": "road_sect_speed"
+	}],
+	"links ": [{
+		"source": 20536,
+		"target": 40984640
+	}, {
+		"source": 41168,
+		"target": 40984640
+	}, {
+		"source": 16456,
+		"target": 12360
+	}, {
+		"source": 24632,
+		"target": 12360
+	}, {
+		"source": 41168,
+		"target": 20552
+	}, {
+		"source": 20536,
+		"target": 16488
+	}, {
+		"source": 41168,
+		"target": 16488
+	}, {
+		"source": 20568,
+		"target": 37072
+	}, {
+		"source": 20536,
+		"target": 37072
+	}, {
+		"source": 20568,
+		"target": 49392
+	}, {
+		"source": 20536,
+		"target": 49392
+	}, {
+		"source": 24632,
+		"target": 53488
+	}],
+	"category ": [{
+		"name": "TABLE"
+	}, {
+		"name": "COLUMN"
+	}]
+}

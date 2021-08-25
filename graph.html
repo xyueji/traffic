@@ -1,0 +1,111 @@
+<!--
+    THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=graph-force
+-->
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+<div id="container" style="height: 100%"></div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+    var dom = document.getElementById("container");
+    var myChart = echarts.init(dom);
+    var app = {};
+
+    var option;
+
+
+    myChart.showLoading();
+    $.get('https://xyueji.github.io/traffic/graph.json', function (graph) {
+        myChart.hideLoading();
+        graph.nodes.forEach(function (node) {
+            node.symbolSize = 20;
+        });
+        option = {
+            title: {
+                text: '数据血缘',
+                subtext: 'hive',
+                top: 'bottom',
+                left: 'right'
+            },
+            tooltip: {
+                trigger: 'item',
+                hideDelay: 3000,
+                enterable: true,
+                //position: 'bottom',
+                //alwaysShowContent: true,
+                show: true,
+                formatter: function(params){
+                    var info = ''
+                    if (params.data.category === 1) {
+                        info = 'db: ' + params.data.db + '</br>'
+                        + 'table: ' + params.data.table + '</br>'
+                        + 'owner: ' + params.data.owner + '</br>'
+                        + 'status: ' + params.data.status + '</br>'
+                        + 'createAt: ' + params.data.createAt + '</br>'
+                    } else if (params.data.category === 0){
+                        info = 'db: ' + params.data.db + '</br>'
+                            + 'table: ' + params.data.table + '</br>'
+                            + 'col: ' + params.data.col + '</br>'
+                            + 'colType: ' + params.data.colType + '</br>'
+                            + 'owner: ' + params.data.owner + '</br>'
+                            + 'status: ' + params.data.status + '</br>'
+                            + 'createAt: ' + params.data.createAt + '</br>'
+                    } else if (params.data.label && params.data.expr){
+                        info = 'operation: ' + params.data.label + '</br>'
+                            + 'expr: ' + params.data.expr + '</br>'
+                    }
+                    return info;
+                }
+            },
+            legend: [{
+                // selectedMode: 'single',
+                data: graph.categories.map(function (a) {
+                    return a.name;
+                })
+            }],
+            series: [
+                {
+                    name: '数据血缘',
+                    type: 'graph',
+                    layout: 'force',
+                    data: graph.nodes,
+                    links: graph.links,
+                    categories: graph.categories,
+                    roam: true,
+                    label: {
+                        show: true
+                    },
+                    force: {
+                        repulsion: 2000
+                    },
+                    edgeLabel: {
+                        normal: {
+                            show: false,
+                            formatter: function(params){
+                                console.log(params)
+                                return 'label: ' + params.data.label + '</br>'
+                                    + 'expr: ' + params.data.expr + '</br>'
+                            },
+                            position:'middle'
+                        }
+                    }
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+    });
+
+    if (option && typeof option === 'object') {
+        myChart.setOption(option);
+    }
+
+</script>
+</body>
+</html>

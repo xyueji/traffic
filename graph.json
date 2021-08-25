@@ -2,9 +2,9 @@
     "nodes": [
         {
             "tableType": "MANAGED_TABLE",
-            "x": 178,
+            "x": 416,
             "name": "default.t1.blockid_exponent",
-            "y": 727,
+            "y": 743,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -17,9 +17,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 203,
+            "x": 556,
             "name": "ods.road_real_time.period",
-            "y": 123,
+            "y": 452,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -32,9 +32,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 319,
+            "x": 567,
             "name": "ods.road_sect_speed.roadsect_id",
-            "y": 159,
+            "y": 461,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -47,9 +47,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 734,
+            "x": 344,
             "name": "default.temp.blockid_exponent",
-            "y": 548,
+            "y": 332,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "string",
@@ -62,9 +62,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 420,
+            "x": 342,
             "name": "ods.road_sect_speed.period",
-            "y": 52,
+            "y": 203,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -77,9 +77,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 1,
+            "x": 767,
             "name": "ods.road_real_time.blockid",
-            "y": 641,
+            "y": 758,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -92,9 +92,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 182,
+            "x": 564,
             "name": "default.t1.roadsect_id",
-            "y": 418,
+            "y": 601,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -107,9 +107,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 432,
+            "x": 275,
             "name": "ods.road_real_time.exponent",
-            "y": 268,
+            "y": 784,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -122,9 +122,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 879,
+            "x": 955,
             "name": "default.t1",
-            "y": 438,
+            "y": 696,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "",
@@ -137,9 +137,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 912,
+            "x": 409,
             "name": "ods.road_real_time",
-            "y": 127,
+            "y": 798,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "",
@@ -152,9 +152,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 307,
+            "x": 188,
             "name": "default.temp",
-            "y": 356,
+            "y": 723,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "",
@@ -167,9 +167,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 996,
+            "x": 161,
             "name": "ods.road_sect_speed",
-            "y": 358,
+            "y": 426,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "",
@@ -257,10 +257,10 @@
     ],
     "categories": [
         {
-            "name": "TABLE"
+            "name": "COLUMN"
         },
         {
-            "name": "COLUMN"
+            "name": "TABLE"
         }
     ]
 }

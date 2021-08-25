@@ -2,7 +2,9 @@
     "nodes": [
         {
             "tableType": "MANAGED_TABLE",
+            "x": 982,
             "name": "default.t1",
+            "y": 683,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -11,12 +13,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "t1"
         },
         {
             "tableType": "EXTERNAL_TABLE",
+            "x": 936,
             "name": "ods.road_real_time",
+            "y": 617,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -25,12 +28,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "road_real_time"
         },
         {
             "tableType": "EXTERNAL_TABLE",
+            "x": 804,
             "name": "ods.road_sect_speed",
+            "y": 209,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -39,12 +43,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "road_sect_speed"
         },
         {
             "tableType": "MANAGED_TABLE",
+            "x": 258,
             "name": "default.temp",
+            "y": 232,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "string",
@@ -53,12 +58,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "temp"
         },
         {
             "tableType": "EXTERNAL_TABLE",
+            "x": 881,
             "name": "ods.road_sect_speed",
+            "y": 683,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -67,12 +73,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "road_sect_speed"
         },
         {
             "tableType": "EXTERNAL_TABLE",
+            "x": 394,
             "name": "ods.road_real_time",
+            "y": 678,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -81,12 +88,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "road_real_time"
         },
         {
             "tableType": "MANAGED_TABLE",
+            "x": 415,
             "name": "default.t1",
+            "y": 705,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -95,12 +103,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "t1"
         },
         {
             "tableType": "EXTERNAL_TABLE",
+            "x": 624,
             "name": "ods.road_real_time",
+            "y": 664,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -109,12 +118,13 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
-            "value": 1,
             "table": "road_real_time"
         },
         {
             "tableType": "MANAGED_TABLE",
+            "x": 843,
             "name": "default.t1.",
+            "y": 328,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "",
@@ -123,12 +133,13 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
-            "value": 1,
             "table": "t1"
         },
         {
             "tableType": "EXTERNAL_TABLE",
+            "x": 936,
             "name": "ods.road_real_time.",
+            "y": 603,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "",
@@ -137,12 +148,13 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
-            "value": 1,
             "table": "road_real_time"
         },
         {
             "tableType": "MANAGED_TABLE",
+            "x": 517,
             "name": "default.temp.",
+            "y": 582,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "",
@@ -151,12 +163,13 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
-            "value": 1,
             "table": "temp"
         },
         {
             "tableType": "EXTERNAL_TABLE",
+            "x": 794,
             "name": "ods.road_sect_speed.",
+            "y": 749,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "",
@@ -165,7 +178,6 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
-            "value": 1,
             "table": "road_sect_speed"
         }
     ],

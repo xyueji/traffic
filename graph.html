@@ -24,7 +24,7 @@
     $.get('https://xyueji.github.io/traffic/graph.json', function (graph) {
         myChart.hideLoading();
         graph.nodes.forEach(function (node) {
-            node.symbolSize = 20;
+            node.symbolSize = 30;
         });
         option = {
             title: {
@@ -82,7 +82,7 @@
                         show: true
                     },
                     force: {
-                        repulsion: 2000
+                        repulsion: 800
                     },
                     edgeLabel: {
                         normal: {

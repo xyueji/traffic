@@ -2,9 +2,9 @@
     "nodes": [
         {
             "tableType": "MANAGED_TABLE",
-            "x": 473,
-            "name": "default.t1",
-            "y": 324,
+            "x": 178,
+            "name": "default.t1.blockid_exponent",
+            "y": 727,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -17,9 +17,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 588,
-            "name": "ods.road_real_time",
-            "y": 346,
+            "x": 203,
+            "name": "ods.road_real_time.period",
+            "y": 123,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -32,9 +32,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 171,
-            "name": "ods.road_sect_speed",
-            "y": 681,
+            "x": 319,
+            "name": "ods.road_sect_speed.roadsect_id",
+            "y": 159,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -47,9 +47,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 645,
-            "name": "default.temp",
-            "y": 411,
+            "x": 734,
+            "name": "default.temp.blockid_exponent",
+            "y": 548,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "string",
@@ -62,9 +62,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 634,
-            "name": "ods.road_sect_speed",
-            "y": 633,
+            "x": 420,
+            "name": "ods.road_sect_speed.period",
+            "y": 52,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -77,9 +77,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 75,
-            "name": "ods.road_real_time",
-            "y": 573,
+            "x": 1,
+            "name": "ods.road_real_time.blockid",
+            "y": 641,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -92,9 +92,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 355,
-            "name": "default.t1",
-            "y": 446,
+            "x": 182,
+            "name": "default.t1.roadsect_id",
+            "y": 418,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -107,9 +107,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 264,
-            "name": "ods.road_real_time",
-            "y": 287,
+            "x": 432,
+            "name": "ods.road_real_time.exponent",
+            "y": 268,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -122,9 +122,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 701,
-            "name": "default.t1.",
-            "y": 520,
+            "x": 879,
+            "name": "default.t1",
+            "y": 438,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "",
@@ -137,9 +137,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 493,
-            "name": "ods.road_real_time.",
-            "y": 292,
+            "x": 912,
+            "name": "ods.road_real_time",
+            "y": 127,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "",
@@ -152,9 +152,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 773,
-            "name": "default.temp.",
-            "y": 181,
+            "x": 307,
+            "name": "default.temp",
+            "y": 356,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "",
@@ -167,9 +167,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 782,
-            "name": "ods.road_sect_speed.",
-            "y": 592,
+            "x": 996,
+            "name": "ods.road_sect_speed",
+            "y": 358,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "",
@@ -184,51 +184,75 @@
     "links": [
         {
             "source": "40984640",
-            "target": "20536"
+            "target": "20536",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "(road_real_time.period = road_sect_speed.period)"
         },
         {
             "source": "40984640",
-            "target": "41168"
+            "target": "41168",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "(road_real_time.period = road_sect_speed.period)"
         },
         {
             "source": "12360",
-            "target": "16456"
+            "target": "16456",
+            "label": "QUERY",
+            "expr": "insert overwrite table default.temp select coalesce(blockid, EXPONENT) blockid_exponent from ods.road_real_time limit 10"
         },
         {
             "source": "12360",
-            "target": "24632"
+            "target": "24632",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "create table t1 as select a.be blockid_exponent, b.roadsect_id from (select coalesce(blockid, EXPONENT) be, period from ods.road_real_time limit 10) a left join (select roadsect_id , period from ods.road_sect_speed limit 10) b on a.period = b.period"
         },
         {
             "source": "20552",
-            "target": "41168"
+            "target": "41168",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": ""
         },
         {
             "source": "16488",
-            "target": "20536"
+            "target": "20536",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "(road_real_time.period = road_sect_speed.period)"
         },
         {
             "source": "16488",
-            "target": "41168"
+            "target": "41168",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "(road_real_time.period = road_sect_speed.period)"
         },
         {
             "source": "37072",
-            "target": "20568"
+            "target": "20568",
+            "label": "QUERY",
+            "expr": "COALESCE(road_real_time.blockid,road_real_time.exponent)"
         },
         {
             "source": "37072",
-            "target": "20536"
+            "target": "20536",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "COALESCE(road_real_time.blockid,road_real_time.exponent)"
         },
         {
             "source": "49392",
-            "target": "20568"
+            "target": "20568",
+            "label": "QUERY",
+            "expr": "COALESCE(road_real_time.blockid,road_real_time.exponent)"
         },
         {
             "source": "49392",
-            "target": "20536"
+            "target": "20536",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "COALESCE(road_real_time.blockid,road_real_time.exponent)"
         },
         {
             "source": "53488",
-            "target": "24632"
+            "target": "24632",
+            "label": "CREATETABLE_AS_SELECT",
+            "expr": "create table t1 as select a.be blockid_exponent, b.roadsect_id from (select coalesce(blockid, EXPONENT) be, period from ods.road_real_time limit 10) a left join (select roadsect_id , period from ods.road_sect_speed limit 10) b on a.period = b.period"
         }
     ],
     "categories": [

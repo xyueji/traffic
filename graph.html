@@ -84,17 +84,8 @@
                     force: {
                         repulsion: 800
                     },
-                    edgeLabel: {
-                        normal: {
-                            show: false,
-                            formatter: function(params){
-                                console.log(params)
-                                return 'label: ' + params.data.label + '</br>'
-                                    + 'expr: ' + params.data.expr + '</br>'
-                            },
-                            position:'middle'
-                        }
-                    }
+                    edgeSymbol: ['arrow'],
+            	    edgeSymbolSize: [10]
                 }
             ]
         };

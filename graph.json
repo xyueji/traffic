@@ -2,9 +2,9 @@
     "nodes": [
         {
             "tableType": "MANAGED_TABLE",
-            "x": 982,
+            "x": 473,
             "name": "default.t1",
-            "y": 683,
+            "y": 324,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -17,9 +17,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 936,
+            "x": 588,
             "name": "ods.road_real_time",
-            "y": 617,
+            "y": 346,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -32,9 +32,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 804,
+            "x": 171,
             "name": "ods.road_sect_speed",
-            "y": 209,
+            "y": 681,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -47,9 +47,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 258,
+            "x": 645,
             "name": "default.temp",
-            "y": 232,
+            "y": 411,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "string",
@@ -62,9 +62,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 881,
+            "x": 634,
             "name": "ods.road_sect_speed",
-            "y": 683,
+            "y": 633,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "string",
@@ -77,9 +77,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 394,
+            "x": 75,
             "name": "ods.road_real_time",
-            "y": 678,
+            "y": 573,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -92,9 +92,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 415,
+            "x": 355,
             "name": "default.t1",
-            "y": 705,
+            "y": 446,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "string",
@@ -107,9 +107,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 624,
+            "x": 264,
             "name": "ods.road_real_time",
-            "y": 664,
+            "y": 287,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "string",
@@ -122,9 +122,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 843,
+            "x": 701,
             "name": "default.t1.",
-            "y": 328,
+            "y": 520,
             "createAt": "2021-08-24 10:38:39",
             "db": "default",
             "colType": "",
@@ -137,9 +137,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 936,
+            "x": 493,
             "name": "ods.road_real_time.",
-            "y": 603,
+            "y": 292,
             "createAt": "2021-07-19 15:14:36",
             "db": "ods",
             "colType": "",
@@ -152,9 +152,9 @@
         },
         {
             "tableType": "MANAGED_TABLE",
-            "x": 517,
+            "x": 773,
             "name": "default.temp.",
-            "y": 582,
+            "y": 181,
             "createAt": "2021-08-11 14:47:01",
             "db": "default",
             "colType": "",
@@ -167,9 +167,9 @@
         },
         {
             "tableType": "EXTERNAL_TABLE",
-            "x": 794,
+            "x": 782,
             "name": "ods.road_sect_speed.",
-            "y": 749,
+            "y": 592,
             "createAt": "2021-07-19 15:18:54",
             "db": "ods",
             "colType": "",
@@ -183,52 +183,52 @@
     ],
     "links": [
         {
-            "source": "20536",
-            "target": "40984640"
+            "source": "40984640",
+            "target": "20536"
         },
         {
-            "source": "41168",
-            "target": "40984640"
+            "source": "40984640",
+            "target": "41168"
         },
         {
-            "source": "16456",
-            "target": "12360"
+            "source": "12360",
+            "target": "16456"
         },
         {
-            "source": "24632",
-            "target": "12360"
+            "source": "12360",
+            "target": "24632"
         },
         {
-            "source": "41168",
-            "target": "20552"
+            "source": "20552",
+            "target": "41168"
         },
         {
-            "source": "20536",
-            "target": "16488"
+            "source": "16488",
+            "target": "20536"
         },
         {
-            "source": "41168",
-            "target": "16488"
+            "source": "16488",
+            "target": "41168"
         },
         {
-            "source": "20568",
-            "target": "37072"
+            "source": "37072",
+            "target": "20568"
         },
         {
-            "source": "20536",
-            "target": "37072"
+            "source": "37072",
+            "target": "20536"
         },
         {
-            "source": "20568",
-            "target": "49392"
+            "source": "49392",
+            "target": "20568"
         },
         {
-            "source": "20536",
-            "target": "49392"
+            "source": "49392",
+            "target": "20536"
         },
         {
-            "source": "24632",
-            "target": "53488"
+            "source": "53488",
+            "target": "24632"
         }
     ],
     "categories": [

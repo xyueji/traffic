@@ -11,6 +11,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "t1"
         },
         {
@@ -24,6 +25,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "road_real_time"
         },
         {
@@ -37,6 +39,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "road_sect_speed"
         },
         {
@@ -50,6 +53,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "temp"
         },
         {
@@ -63,6 +67,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "road_sect_speed"
         },
         {
@@ -76,6 +81,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "road_real_time"
         },
         {
@@ -89,6 +95,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "t1"
         },
         {
@@ -102,6 +109,7 @@
             "status": "ONLINE",
             "category": 0,
             "owner": "bigdata",
+            "value": 1,
             "table": "road_real_time"
         },
         {
@@ -115,6 +123,7 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
+            "value": 1,
             "table": "t1"
         },
         {
@@ -128,6 +137,7 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
+            "value": 1,
             "table": "road_real_time"
         },
         {
@@ -141,6 +151,7 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
+            "value": 1,
             "table": "temp"
         },
         {
@@ -154,6 +165,7 @@
             "status": "ONLINE",
             "category": 1,
             "owner": "bigdata",
+            "value": 1,
             "table": "road_sect_speed"
         }
     ],
